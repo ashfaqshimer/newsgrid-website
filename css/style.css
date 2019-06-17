@@ -74,6 +74,9 @@ h6 {
 	padding: 3rem;
 }
 
+.l-heading {
+	font-size: 4rem;
+}
 .container {
 	max-width: var(--max-width);
 	margin: auto;
@@ -121,6 +124,12 @@ h6 {
 	background: var(--secondary-color);
 }
 
+.btn-block {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
 .btn:hover {
 	opacity: 0.85;
 	cursor: pointer;
@@ -159,6 +168,17 @@ h6 {
 	padding: 0.5rem 0;
 	border-bottom: #444 1px dotted;
 	width: 90%;
+}
+
+.page-container {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	grid-gap: 1rem;
+	margin: 1rem 0;
+}
+
+.page-container > *:first-child {
+	grid-row: 1 / span 3;
 }
 
 /* Navbar */
